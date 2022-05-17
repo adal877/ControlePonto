@@ -1,8 +1,15 @@
+package model;
+
 public class Funcionario {
     private int idFunc;
     private String nome;
     private String email;
     private String documento;
+    private String Cargo;
+
+    public String getCargo() { return Cargo; }
+
+    public void setCargo(String Cargo) { this.Cargo = Cargo; }
 
     public int getIdFunc() {
         return idFunc;

@@ -1,3 +1,5 @@
+package model;
+
 public class Secretaria extends Funcionario {
     private String telefone;
     private String ramal;
