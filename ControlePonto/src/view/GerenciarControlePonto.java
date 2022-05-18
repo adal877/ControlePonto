@@ -8,7 +8,6 @@ import utils.RegistroPonto;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.time.LocalTime;
 
 public class GerenciarControlePonto {
     public static RegistroPonto criaRegistroPonto(Funcionario func,

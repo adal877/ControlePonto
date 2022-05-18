@@ -1,9 +1,6 @@
 package utils;
 
 import model.Funcionario;
-import model.Operador;
-import model.Secretaria;
-
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
@@ -13,17 +10,10 @@ public class RegistroPonto {
     private LocalDate dataRegistro;
     private LocalDateTime horaEntrada;
     private LocalDateTime horaSaida;
-//    public long getIdRegPonto() {
-//        return idRegPonto;
-//    }
 
     public void setIdRegPonto(long idRegPonto) {
         this.idRegPonto = idRegPonto;
     }
-
-//    public Funcionario getFunc() {
-//        return func;
-//    }
 
     public void setFunc(Funcionario func) { this.func = func; }
 
@@ -66,12 +56,12 @@ public class RegistroPonto {
     }
     public void apresentarRegistroPonto() {
         desenharFrame();
-        System.out.printf("~~~ Id do registro ponto: %d ~~~", idRegPonto);
-        System.out.println("Nome do funcionario: " + func.getNome());
-        System.out.println("Cargo do funcionraio: " + func.getCargo());
-        System.out.println("Data de registro do funcionário: " + getDataRegistro());
-        System.out.println("Entrada: " + getHoraEntrada());
-        System.out.println("Saída: " + getHoraSaida());
+        System.out.printf("~~~ Id do registro ponto: %d ~~~\n", idRegPonto);
+        System.out.println("- Nome do funcionario: " + func.getNome());
+        System.out.println("- Cargo do funcionraio: " + func.getCargo());
+        System.out.println("- Data de registro do funcionário: " + getDataRegistro());
+        System.out.println("- Entrada: " + getHoraEntrada());
+        System.out.println("- Saída: " + getHoraSaida());
         desenharFrame();
     }
 }
