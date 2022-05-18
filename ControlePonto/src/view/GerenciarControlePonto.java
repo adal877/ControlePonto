@@ -23,7 +23,7 @@ public class GerenciarControlePonto {
         rgPonto.setHoraSaida(horaSaida);
         return rgPonto;
     }
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         LocalDate todayDate = LocalDate.now();
         LocalDateTime currentTime = LocalDateTime.now();
 
@@ -49,7 +49,7 @@ public class GerenciarControlePonto {
         secretaria.setEmail("the.best.secretaria@hotmail.com");
         secretaria.setNome("Marcela");
         secretaria.setIdFunc(2);
-        gerente.setCargo("Secretaria");
+        secretaria.setCargo("Secretaria");
 
         RegistroPonto rgPontoSecretaria = criaRegistroPonto(secretaria, todayDate,
                 113, currentTime,
@@ -63,7 +63,7 @@ public class GerenciarControlePonto {
         operador.setEmail("the.best.operador@hotmail.com");
         operador.setNome("Carla");
         operador.setIdFunc(3);
-        gerente.setCargo("Operador");
+        operador.setCargo("Operador");
 
         RegistroPonto rgPontoOperador = criaRegistroPonto(operador, todayDate,
                 114, currentTime,

@@ -54,7 +54,7 @@ public class RegistroPonto {
             }
         }
     }
-    public void apresentarRegistroPonto() {
+    public void apresentarRegistroPonto() throws InterruptedException {
         desenharFrame();
         System.out.printf("~~~ Id do registro ponto: %d ~~~\n", idRegPonto);
         System.out.println("- Nome do funcionario: " + func.getNome());
@@ -63,5 +63,6 @@ public class RegistroPonto {
         System.out.println("- Entrada: " + getHoraEntrada());
         System.out.println("- Saída: " + getHoraSaida());
         desenharFrame();
+        Thread.sleep(1000);
     }
 }
